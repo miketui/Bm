@@ -1,6 +1,10 @@
 export default function FinalConclusionPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 p-6 md:p-8">
+    <>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/fonts.css" />
+      <link rel="stylesheet" href="styles/print.css" media="print" />
+    <div className="min-h-screen backmatter-conclusion p-6 md:p-8">
       <div className="max-w-4xl mx-auto">
         
         {/* Header */}
@@ -32,7 +36,7 @@ export default function FinalConclusionPage() {
             
             {/* Opening reflection with drop cap */}
             <div className="prose prose-lg max-w-none">
-              <div className="float-left text-7xl font-serif text-blue-500 leading-none mr-4 mt-2">A</div>
+              <div className="backmatter-dropcap">A</div>
               <p className="text-slate-700 leading-relaxed">
                 s we reach the end of this extraordinary journey, the salon lights dim, and the final strands of hair fall gently to the floor. In the quietude of this moment, dear reader, I invite you to pause and reflect on the transformative power of your craft—a power that extends far beyond the realm of mere aesthetics.
               </p>
@@ -107,5 +111,6 @@ export default function FinalConclusionPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

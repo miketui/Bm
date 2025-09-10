@@ -48,7 +48,11 @@ export default function FinalCurlsCollectivePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-teal-50 p-6 md:p-8">
+    <>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/fonts.css" />
+      <link rel="stylesheet" href="styles/print.css" media="print" />
+    <div className="min-h-screen backmatter-curlscollective p-6 md:p-8">
       <div className="max-w-6xl mx-auto">
         
         {/* Header */}
@@ -198,5 +202,6 @@ export default function FinalCurlsCollectivePage() {
         
       </div>
     </div>
+    </>
   );
 }

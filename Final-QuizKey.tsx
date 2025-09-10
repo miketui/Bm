@@ -22,7 +22,11 @@ export default function FinalQuizKeyPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 p-6 md:p-8">
+    <>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/fonts.css" />
+      <link rel="stylesheet" href="styles/print.css" media="print" />
+    <div className="min-h-screen backmatter-quiz p-6 md:p-8">
       <div className="max-w-6xl mx-auto">
         
         {/* Header */}
@@ -70,7 +74,7 @@ export default function FinalQuizKeyPage() {
                     </h3>
                     <div className="flex space-x-4">
                       {chapterData.answers.map((answer, answerIndex) => (
-                        <span key={answerIndex} className="bg-green-500 text-white px-3 py-1 rounded-full font-bold text-sm">
+                        <span key={answerIndex} className="quiz-answer-badge">
                           {answer}
                         </span>
                       ))}
@@ -88,7 +92,7 @@ export default function FinalQuizKeyPage() {
                     </h3>
                     <div className="flex space-x-4">
                       {chapterData.answers.map((answer, answerIndex) => (
-                        <span key={answerIndex} className="bg-green-500 text-white px-3 py-1 rounded-full font-bold text-sm">
+                        <span key={answerIndex} className="quiz-answer-badge">
                           {answer}
                         </span>
                       ))}
@@ -160,5 +164,6 @@ export default function FinalQuizKeyPage() {
         
       </div>
     </div>
+    </>
   );
 }

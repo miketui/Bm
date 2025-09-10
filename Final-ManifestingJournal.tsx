@@ -75,7 +75,11 @@ export default function FinalManifestingJournalPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 p-6 md:p-8">
+    <>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/fonts.css" />
+      <link rel="stylesheet" href="styles/print.css" media="print" />
+    <div className="min-h-screen backmatter-manifestingjournal p-6 md:p-8">
       <div className="max-w-5xl mx-auto">
         
         {/* Header */}
@@ -229,5 +233,6 @@ export default function FinalManifestingJournalPage() {
         
       </div>
     </div>
+    </>
   );
 }
