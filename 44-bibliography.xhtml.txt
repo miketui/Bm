@@ -1,0 +1,417 @@
+export default function BibliographyPage() {
+const bibliographySections = [
+{
+title: “Essential Reading”,
+icon: “📚”,
+color: “from-blue-500 to-indigo-500”,
+bgColor: “from-blue-50 to-indigo-50”,
+resources: [
+{
+type: “Book”,
+title: “The Artist’s Way”,
+author: “Julia Cameron”,
+description: “A transformative guide to unlocking creative potential and overcoming artistic blocks”,
+year: “1992”
+},
+{
+type: “Book”,
+title: “Mindset: The New Psychology of Success”,
+author: “Carol S. Dweck”,
+description: “Essential insights on developing a growth mindset for personal and professional development”,
+year: “2006”
+},
+{
+type: “Book”,
+title: “The Lean Startup”,
+author: “Eric Ries”,
+description: “Fundamental principles for building sustainable businesses and testing ideas”,
+year: “2011”
+},
+{
+type: “Book”,
+title: “Atomic Habits”,
+author: “James Clear”,
+description: “Practical strategies for building good habits and breaking bad ones”,
+year: “2018”
+}
+]
+},
+{
+title: “Industry Publications”,
+icon: “📰”,
+color: “from-emerald-500 to-teal-500”,
+bgColor: “from-emerald-50 to-teal-50”,
+resources: [
+{
+type: “Magazine”,
+title: “Modern Salon”,
+author: “Bobit Business Media”,
+description: “Leading trade publication covering trends, techniques, and business strategies for salon professionals”,
+year: “Ongoing”
+},
+{
+type: “Magazine”,
+title: “American Salon”,
+author: “Questex LLC”,
+description: “Professional magazine featuring cutting-edge styles, industry news, and career development”,
+year: “Ongoing”
+},
+{
+type: “Publication”,
+title: “Allure”,
+author: “Condé Nast”,
+description: “Beauty and fashion magazine showcasing latest trends and industry innovations”,
+year: “Ongoing”
+},
+{
+type: “Journal”,
+title: “International Journal of Cosmetic Science”,
+author: “Society of Cosmetic Chemists”,
+description: “Peer-reviewed research on cosmetic science and hair care innovations”,
+year: “Ongoing”
+}
+]
+},
+{
+title: “Digital Resources & Platforms”,
+icon: “💻”,
+color: “from-purple-500 to-pink-500”,
+bgColor: “from-purple-50 to-pink-50”,
+resources: [
+{
+type: “Platform”,
+title: “Coursera - Business Courses”,
+author: “Various Universities”,
+description: “Online courses covering entrepreneurship, marketing, and business development”,
+year: “Ongoing”
+},
+{
+type: “Platform”,
+title: “MasterClass - Creative Arts”,
+author: “MasterClass Inc.”,
+description: “Expert-led classes on creativity, business, and personal development”,
+year: “Ongoing”
+},
+{
+type: “Website”,
+title: “Beauty Independent”,
+author: “Beauty Independent Media”,
+description: “Industry news, trends, and insights for beauty professionals and entrepreneurs”,
+year: “Ongoing”
+},
+{
+type: “Platform”,
+title: “LinkedIn Learning”,
+author: “LinkedIn Corporation”,
+description: “Professional development courses covering business skills and industry trends”,
+year: “Ongoing”
+}
+]
+},
+{
+title: “Research & Studies”,
+icon: “🔬”,
+color: “from-orange-500 to-red-500”,
+bgColor: “from-orange-50 to-red-50”,
+resources: [
+{
+type: “Study”,
+title: “The Beauty Industry Report 2024”,
+author: “McKinsey & Company”,
+description: “Comprehensive analysis of beauty industry trends, consumer behavior, and market dynamics”,
+year: “2024”
+},
+{
+type: “Research”,
+title: “Freelance Economy Statistics”,
+author: “Upwork Global Inc.”,
+description: “Annual research on freelance workforce trends and economic impact”,
+year: “2024”
+},
+{
+type: “Study”,
+title: “Consumer Hair Care Preferences”,
+author: “Mintel Group Ltd.”,
+description: “Market research on consumer preferences and purchasing behaviors in hair care”,
+year: “2023”
+},
+{
+type: “Report”,
+title: “Small Business Trends Report”,
+author: “U.S. Small Business Administration”,
+description: “Government data and trends affecting small business owners and entrepreneurs”,
+year: “2024”
+}
+]
+},
+{
+title: “Professional Development”,
+icon: “🎓”,
+color: “from-teal-500 to-cyan-500”,
+bgColor: “from-teal-50 to-cyan-50”,
+resources: [
+{
+type: “Organization”,
+title: “Professional Beauty Association (PBA)”,
+author: “Professional Beauty Association”,
+description: “Leading trade association providing education, advocacy, and resources for beauty professionals”,
+year: “Ongoing”
+},
+{
+type: “Certification”,
+title: “Advanced Color Theory Certification”,
+author: “Various Beauty Schools”,
+description: “Specialized training programs for advanced color techniques and theory”,
+year: “Ongoing”
+},
+{
+type: “Conference”,
+title: “International Beauty Show”,
+author: “Questex LLC”,
+description: “Premier beauty trade show featuring education, networking, and industry innovations”,
+year: “Annual”
+},
+{
+type: “Workshop”,
+title: “Business Skills for Beauty Professionals”,
+author: “Various Providers”,
+description: “Workshops focused on entrepreneurship, marketing, and business management for stylists”,
+year: “Ongoing”
+}
+]
+}
+];
+
+return (
+<div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 p-6 md:p-8">
+<div className="max-w-6xl mx-auto">
+
+```
+    {/* Header */}
+    <div className="text-center mb-12">
+      <div className="inline-block bg-white rounded-3xl p-8 shadow-2xl border border-white/50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10"></div>
+        <div className="relative">
+          <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-white text-2xl">📖</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+            BIBLIOGRAPHY
+          </h1>
+          <h2 className="text-xl text-slate-600 mb-4">Resources for Continued Learning</h2>
+          <p className="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+            A curated collection of books, publications, and resources to support your ongoing growth as a conscious hairstylist
+          </p>
+          <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-6"></div>
+        </div>
+      </div>
+    </div>
+
+    {/* Introduction */}
+    <div className="bg-white rounded-2xl p-8 mb-8 shadow-lg border border-white/50">
+      <div className="prose prose-lg max-w-none text-slate-700">
+        <div className="float-left text-7xl font-serif text-blue-500 leading-none mr-4 mt-2">T</div>
+        <p className="leading-relaxed">
+          he journey of conscious hairstyling extends far beyond the pages of this book. The resources listed 
+          here have been carefully selected to support your continued growth, inspire new perspectives, and 
+          provide practical tools for building the practice of your dreams.
+        </p>
+        
+        <p className="leading-relaxed mt-4">
+          Each resource has contributed to the development of the concepts and strategies presented in 
+          <em>Curls & Contemplation</em>. Whether you're seeking technical skill development, business acumen, 
+          creative inspiration, or personal growth, these materials will serve as trusted companions on your path.
+        </p>
+      </div>
+    </div>
+
+    {/* Bibliography Sections */}
+    <div className="space-y-8">
+      {bibliographySections.map((section, sectionIndex) => (
+        <div key={sectionIndex} className="bg-white rounded-2xl shadow-lg border border-white/50 overflow-hidden">
+          
+          {/* Section Header */}
+          <div className={`bg-gradient-to-r ${section.color} text-white p-6`}>
+            <h3 className="text-2xl font-bold flex items-center justify-center">
+              <span className="text-3xl mr-3">{section.icon}</span>
+              {section.title}
+            </h3>
+          </div>
+          
+          {/* Resources */}
+          <div className={`bg-gradient-to-br ${section.bgColor} p-6`}>
+            <div className="space-y-6">
+              {section.resources.map((resource, resourceIndex) => (
+                <div key={resourceIndex} className="bg-white/80 rounded-xl p-6 shadow-sm border border-white/50 hover:shadow-md transition-shadow">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <div className="flex items-center mb-2">
+                        <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-medium mr-3">
+                          {resource.type}
+                        </span>
+                        <span className="text-slate-500 text-sm">{resource.year}</span>
+                      </div>
+                      <h4 className="text-lg font-bold text-slate-800 mb-1">{resource.title}</h4>
+                      <p className="text-slate-600 font-medium text-sm mb-3">{resource.author}</p>
+                    </div>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed text-sm">{resource.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Additional Resources Section */}
+    <div className="mt-8 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200">
+      <h3 className="text-2xl font-bold text-slate-800 mb-6 text-center">Recommended Online Communities</h3>
+      
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="bg-white rounded-lg p-6 shadow-sm border border-amber-200">
+          <h4 className="font-bold text-amber-800 mb-4">Social Media Communities</h4>
+          <ul className="space-y-2 text-slate-700 text-sm">
+            <li className="flex items-start">
+              <span className="text-amber-600 mr-2">•</span>
+              Instagram: @hairstylistnetwork - Professional community and inspiration
+            </li>
+            <li className="flex items-start">
+              <span className="text-amber-600 mr-2">•</span>
+              Facebook: Hair Stylists United - Supportive group for industry professionals
+            </li>
+            <li className="flex items-start">
+              <span className="text-amber-600 mr-2">•</span>
+              LinkedIn: Beauty Industry Professionals - Networking and career development
+            </li>
+            <li className="flex items-start">
+              <span className="text-amber-600 mr-2">•</span>
+              TikTok: #hairstylisteducation - Quick tips and trending techniques
+            </li>
+          </ul>
+        </div>
+        
+        <div className="bg-white rounded-lg p-6 shadow-sm border border-amber-200">
+          <h4 className="font-bold text-amber-800 mb-4">Professional Forums & Websites</h4>
+          <ul className="space-y-2 text-slate-700 text-sm">
+            <li className="flex items-start">
+              <span className="text-amber-600 mr-2">•</span>
+              BeautyLaunchpad.com - Industry news and education
+            </li>
+            <li className="flex items-start">
+              <span className="text-amber-600 mr-2">•</span>
+              SalonToday.com - Business strategies and trends
+            </li>
+            <li className="flex items-start">
+              <span className="text-amber-600 mr-2">•</span>
+              BehindTheChair.com - Community and continuing education
+            </li>
+            <li className="flex items-start">
+              <span className="text-amber-600 mr-2">•</span>
+              ProfessionalBeauty.co.uk - International perspective and techniques
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* How to Use This Bibliography */}
+    <div className="mt-8 bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+      <h3 className="text-xl font-bold text-slate-800 mb-6 text-center">How to Use This Bibliography</h3>
+      
+      <div className="grid md:grid-cols-3 gap-6">
+        <div className="text-center">
+          <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-white text-2xl">📝</span>
+          </div>
+          <h4 className="font-bold text-slate-800 mb-3">Start with Intention</h4>
+          <p className="text-slate-600 text-sm leading-relaxed">
+            Identify your current learning goals and choose resources that align with your specific needs and interests.
+          </p>
+        </div>
+        
+        <div className="text-center">
+          <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-white text-2xl">⏰</span>
+          </div>
+          <h4 className="font-bold text-slate-800 mb-3">Create a Schedule</h4>
+          <p className="text-slate-600 text-sm leading-relaxed">
+            Dedicate regular time for learning. Even 15-20 minutes daily can lead to significant growth over time.
+          </p>
+        </div>
+        
+        <div className="text-center">
+          <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-white text-2xl">💡</span>
+          </div>
+          <h4 className="font-bold text-slate-800 mb-3">Apply & Reflect</h4>
+          <p className="text-slate-600 text-sm leading-relaxed">
+            Take notes, discuss concepts with peers, and find ways to implement new ideas in your practice.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Personal Learning Plan */}
+    <div className="mt-8 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200">
+      <h3 className="text-xl font-bold text-slate-800 mb-6 text-center">My Personal Learning Plan</h3>
+      
+      <div className="space-y-6">
+        <div>
+          <label className="block text-slate-700 font-medium mb-3">
+            Resources I want to explore first:
+          </label>
+          <textarea 
+            className="w-full h-20 p-4 border-2 border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none placeholder-slate-400"
+            placeholder="List the books, courses, or resources that caught your attention..."
+          />
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <label className="block text-slate-700 font-medium mb-3">
+              My learning schedule:
+            </label>
+            <textarea 
+              className="w-full h-20 p-4 border-2 border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none placeholder-slate-400"
+              placeholder="When and how often will you dedicate time to learning?"
+            />
+          </div>
+          
+          <div>
+            <label className="block text-slate-700 font-medium mb-3">
+              How I'll track my progress:
+            </label>
+            <textarea 
+              className="w-full h-20 p-4 border-2 border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none placeholder-slate-400"
+              placeholder="Journaling, discussion groups, practical application..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Closing Message */}
+    <div className="mt-8 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-2xl p-8 text-center">
+      <h4 className="text-xl font-semibold mb-4">A Final Note on Learning</h4>
+      <div className="max-w-3xl mx-auto">
+        <p className="text-lg leading-relaxed opacity-95 mb-6">
+          The most successful hairstylists are lifelong learners who remain curious, open, and committed 
+          to growth. These resources are tools—but your dedication, practice, and willingness to evolve 
+          are what will truly transform your career and impact.
+        </p>
+        
+        <div className="bg-white/20 rounded-lg p-4">
+          <p className="text-sm leading-relaxed italic">
+            "Live as if you were to die tomorrow. Learn as if you were to live forever." - Gandhi
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+```
+
+);
+}
