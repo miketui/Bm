@@ -61,7 +61,11 @@ export default function FinalContinuedLearningPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-6 md:p-8">
+    <>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/fonts.css" />
+      <link rel="stylesheet" href="styles/print.css" media="print" />
+    <div className="min-h-screen backmatter-continuedlearning p-6 md:p-8">
       <div className="max-w-4xl mx-auto">
         
         {/* Header */}
@@ -178,5 +182,6 @@ export default function FinalContinuedLearningPage() {
         
       </div>
     </div>
+    </>
   );
 }

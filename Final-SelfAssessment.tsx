@@ -35,7 +35,11 @@ export default function FinalSelfAssessmentPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 p-6 md:p-8">
+    <>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/fonts.css" />
+      <link rel="stylesheet" href="styles/print.css" media="print" />
+    <div className="min-h-screen backmatter-selfassessment p-6 md:p-8">
       <div className="max-w-5xl mx-auto">
         
         {/* Header */}
@@ -166,5 +170,6 @@ export default function FinalSelfAssessmentPage() {
         
       </div>
     </div>
+    </>
   );
 }

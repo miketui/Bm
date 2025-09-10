@@ -1,6 +1,10 @@
 export default function FinalAcknowledgmentsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 p-6 md:p-8">
+    <>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/fonts.css" />
+      <link rel="stylesheet" href="styles/print.css" media="print" />
+    <div className="min-h-screen backmatter-acknowledgments p-6 md:p-8">
       <div className="max-w-5xl mx-auto">
         
         {/* Header */}
@@ -37,7 +41,7 @@ export default function FinalAcknowledgmentsPage() {
             
             {/* Opening paragraph with drop cap */}
             <div className="prose prose-lg max-w-none">
-              <div className="float-left text-7xl font-serif text-blue-500 leading-none mr-4 mt-2">T</div>
+              <div className="backmatter-dropcap">T</div>
               <p>
                 he night I decided to put these words on paper, I sat alone at my kitchen table, surrounded by scattered notes and half-empty coffee cups. Doubt perched heavily on my shoulder, whispering that I had nothing worthwhile to say. I share this with you not for sympathy, but because vulnerability creates the most authentic connections—and connection is why I wrote this book.
               </p>
@@ -115,5 +119,6 @@ export default function FinalAcknowledgmentsPage() {
         
       </div>
     </div>
+    </>
   );
 }

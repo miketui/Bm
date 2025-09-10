@@ -40,7 +40,11 @@ export default function FinalJournalingStartPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 p-6 md:p-8">
+    <>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/fonts.css" />
+      <link rel="stylesheet" href="styles/print.css" media="print" />
+    <div className="min-h-screen backmatter-journalingstart p-6 md:p-8">
       <div className="max-w-5xl mx-auto">
         
         {/* Header */}
@@ -147,5 +151,6 @@ export default function FinalJournalingStartPage() {
         
       </div>
     </div>
+    </>
   );
 }
